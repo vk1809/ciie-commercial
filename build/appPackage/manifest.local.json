@@ -1,0 +1,101 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.13",
+    "version": "1.0.1",
+    "id": "2de9261c-a8a5-49c2-9416-2a04b5eb5e0a",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://localhost:53000",
+        "privacyUrl": "https://localhost:53000/index.html#/privacy",
+        "termsOfUseUrl": "https://localhost:53000/index.html#/termsofuse"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "CIIE-BMSCE-local-debug",
+        "full": "Full name for CIIE-BMSCE-local-debug"
+    },
+    "description": {
+        "short": "Short description of CIIE-BMSCE-local-debug",
+        "full": "Full description of CIIE-BMSCE-local-debug"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "08095485-fa07-4fd9-bfe1-bf558801f77c",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Sign In",
+                            "description": "Sign in to get started"
+                        },
+                        {
+                            "title": "IRS Management",
+                            "description": "Create new IRS and track all milestones pertaining to your IRS"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://localhost:53000/index.html#/config",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "My IRS Requests",
+            "contentUrl": "https://localhost:53000/index.html#/tab",
+            "websiteUrl": "https://localhost:53000/index.html#/tab",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "index1",
+            "name": "My IRS Approvals",
+            "contentUrl": "https://localhost:53000/index.html#/newForm",
+            "websiteUrl": "https://localhost:53000/index.html#/newForm",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "localhost",
+        "c568-2409-4071-e0b-536b-29a4-aa75-4490-39b8.ngrok.io",
+        "localhost:53000"
+    ],
+    "webApplicationInfo": {
+        "id": "aa58b8a3-8dd2-4033-aab5-6f28daa71a7b",
+        "resource": "api://localhost/botid-08095485-fa07-4fd9-bfe1-bf558801f77c"
+    }
+}

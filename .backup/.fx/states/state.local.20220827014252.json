@@ -1,0 +1,37 @@
+{
+    "solution": {
+        "teamsAppTenantId": "bf060fca-9948-414b-baee-558dd21d9073"
+    },
+    "fx-resource-frontend-hosting": {
+        "indexPath": "/index.html#",
+        "endpoint": "https://localhost:53000",
+        "domain": "localhost",
+        "sslCertFile": "C:/Users/LENOVO/.fx/certificate/localhost.crt",
+        "sslKeyFile": "C:/Users/LENOVO/.fx/certificate/localhost.key"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "8abcfb15-cdaf-4e5f-95e9-e8de2bc52ea3",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "18f0d6f3-a443-4fc4-a580-a3ea79ffb4fc",
+        "oauth2PermissionScopeId": "a06677d1-faca-47a3-9976-acd1d7efa5a3",
+        "tenantId": "bf060fca-9948-414b-baee-558dd21d9073",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/bf060fca-9948-414b-baee-558dd21d9073",
+        "applicationIdUris": "api://localhost/botid-7fea015e-dcc9-440c-8d55-709593e4ecba",
+        "botId": "7fea015e-dcc9-440c-8d55-709593e4ecba",
+        "botEndpoint": "https://dd50-2401-4900-33b7-c13a-f1b0-ed3b-9cfb-beaf.ngrok.io",
+        "frontendEndpoint": "https://localhost"
+    },
+    "fx-resource-bot": {
+        "botId": "7fea015e-dcc9-440c-8d55-709593e4ecba",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "objectId": "41d48a71-379d-48eb-ac84-3c8079887c9c",
+        "siteEndpoint": "https://dd50-2401-4900-33b7-c13a-f1b0-ed3b-9cfb-beaf.ngrok.io",
+        "validDomain": "dd50-2401-4900-33b7-c13a-f1b0-ed3b-9cfb-beaf.ngrok.io"
+    },
+    "fx-resource-simple-auth": {},
+    "fx-resource-appstudio": {
+        "teamsAppUpdatedAt": 1661544328502,
+        "teamsAppId": "dbc21747-b8e6-4dfa-ae90-7da4aa6e0aa2"
+    }
+}
