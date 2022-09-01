@@ -1,0 +1,55 @@
+{
+    "solution": {
+        "teamsAppTenantId": "21786f5e-0913-4533-bc42-0ba1f0dcd1cd",
+        "subscriptionId": "840cd2e2-25c8-4bef-b603-2183dfd5020c",
+        "subscriptionName": "Azure for Students",
+        "tenantId": "22078601-3ed4-4e03-ac1c-0c3ed45ca85d",
+        "needCreateResourceGroup": true,
+        "resourceGroupName": "ciiebmsce-dev-rg",
+        "location": "East US",
+        "resourceNameSuffix": "8a1aeb",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "21786f5e-0913-4533-bc42-0ba1f0dcd1cd",
+        "teamsAppId": "0376796d-fdcb-45ae-bfa6-3e4ebcdc3cf4",
+        "teamsAppUpdatedAt": 1660997823562
+    },
+    "fx-resource-identity": {
+        "identityName": "ciiebmscedev3f01ad",
+        "identityResourceId": "/subscriptions/840cd2e2-25c8-4bef-b603-2183dfd5020c/resourceGroups/ciiebmsce-dev-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/ciiebmscedev3f01ad",
+        "identityClientId": "7c0e33f7-202c-44c4-a9df-64a3436176c3"
+    },
+    "fx-resource-bot": {
+        "botId": "07440c49-611d-422e-bc10-8eec0efe5ac8",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "objectId": "4e558a0d-a5bb-4ca0-a706-6bc47562b39a",
+        "skuName": "B1",
+        "siteName": "ciiebmscedev3f01adbot",
+        "validDomain": "ciiebmscedev3f01adbot.azurewebsites.net",
+        "appServicePlanName": "ciiebmscedev3f01adbot",
+        "resourceId": "/subscriptions/840cd2e2-25c8-4bef-b603-2183dfd5020c/resourceGroups/ciiebmsce-dev-rg/providers/Microsoft.Web/sites/ciiebmscedev3f01adbot",
+        "siteEndpoint": "https://ciiebmscedev3f01adbot.azurewebsites.net"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "4da54ef8-0dbc-4af8-bf51-432dff347dc4",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "218a9fbb-0bdb-45ae-abad-898cfb64750c",
+        "oauth2PermissionScopeId": "121f94b9-125d-4170-a38c-ab6558b7bb38",
+        "tenantId": "21786f5e-0913-4533-bc42-0ba1f0dcd1cd",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/21786f5e-0913-4533-bc42-0ba1f0dcd1cd",
+        "applicationIdUris": "api://ciiebmscedev3f01adtab.z13.web.core.windows.net/botid-07440c49-611d-422e-bc10-8eec0efe5ac8",
+        "botId": "07440c49-611d-422e-bc10-8eec0efe5ac8",
+        "botEndpoint": "https://ciiebmscedev3f01adbot.azurewebsites.net",
+        "frontendEndpoint": "https://ciiebmscedev3f01adtab.z13.web.core.windows.net"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "ciiebmscedev3f01adtab.z13.web.core.windows.net",
+        "endpoint": "https://ciiebmscedev3f01adtab.z13.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/840cd2e2-25c8-4bef-b603-2183dfd5020c/resourceGroups/ciiebmsce-dev-rg/providers/Microsoft.Storage/storageAccounts/ciiebmscedev3f01adtab"
+    },
+    "fx-resource-cicd": {},
+    "fx-resource-api-connector": {}
+}

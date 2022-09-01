@@ -1,0 +1,45 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Learn Adaptive Card and Commands"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Now you have triggered a command that sends this card! Go to documentations to learn more about Adaptive Card and Commands in Teams Bot. Click on \"I like this\" below if you think this is helpful.",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Like Count:",
+          "value": "${likeCount}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "I Like This!",
+      "verb": "userlike",
+      "fallback": "Action.Submit"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Adaptive Card Docs",
+      "url": "https://teams.microsoft.com/l/task/e300088c-b96d-45f4-994c-b1434abb81c0?url=https://localhost:53000/index.html#/newForm&height=70%&width=70%&title=Create%20IRS&completionBotId=bc75f112-5d41-4d88-a6db-0a44b669eaa8"
+    },
+    {
+      "type": "Action.OpenUrl",
+      "title": "Bot Command Docs",
+      "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-commands-menu?tabs=desktop%2Cdotnet"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

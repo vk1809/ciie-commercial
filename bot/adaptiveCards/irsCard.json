@@ -1,0 +1,89 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "text": "BMSCE Paper-Less Permissions Bot",
+                            "style": "default",
+                            "size": "Medium",
+                            "spacing": "Large"
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "RichTextBlock",
+            "inlines": [
+                {
+                    "type": "TextRun",
+                    "text": "Use the BMSCE Permissions Bot to:"
+                }
+            ],
+            "spacing": "Medium"
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default", 
+                    "horizontalAlignment": "Left", 
+                    "text": "* Permissions To take any Facilites in BMSCE"
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default",
+                    "horizontalAlignment": "Left",
+                    "text": "* Permissions For Fastrack Form" 
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default",
+                    "horizontalAlignment": "Left",
+                    "text": "* Permissions For lost ID Card Form"
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default",
+                    "horizontalAlignment": "Left",
+                    "text": "* Pitch Your Startup idea to CIIE BMSCE"
+                }
+            ]
+        }
+    ],
+    "actions": [  
+        {
+            "type": "Action.Submit",
+            "title": "Create Permissions Requests",
+            "data":{
+                "text":"TaskModulesIds.IRS_TICKET",
+                "msteams":{
+                    "type":"task/fetch",
+                    "text":"TaskModulesIds.IRS_TICKET"
+                }
+            }  
+        },
+        {
+          "type": "Action.OpenUrl",
+          "title": "My Request",
+          "url": "https://teams.microsoft.com/l/entity/7db8dcdc-8821-4738-98df-8b244225bf9a/index?webUrl=https://mtndemandmdev57aff7tab.z19.web.core.windows.net/index.html#/tab&label=My%20IRS%20Requests"
+        }
+      ]
+}

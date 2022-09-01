@@ -1,0 +1,111 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body":  [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "altText": "",
+                            "size": "Small",
+                            "url": "https://i.ibb.co/tHypqWN/logo-mtn.jpg"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "text": "Welcome to MTN Demand management",
+                            "style": "default",
+                            "size": "Medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "Teams Edition",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://i.ibb.co/r2y1gQt/MTN-Head-page.jpg",
+                            "horizontalAlignment": "Center"
+                        }
+                    ],
+                    "width": "auto"
+                }
+            ]
+        },
+        {
+            "type": "RichTextBlock",
+            "inlines": [
+                {
+                    "type": "TextRun",
+                    "text": "Use the MTN demand bot to:"
+                }
+            ],
+            "spacing": "Medium"
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default", 
+                    "horizontalAlignment": "Left", 
+                    "text": "* Create your IRS requests"
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default",
+                    "horizontalAlignment": "Left",
+                    "text": "* Track approvals and milestones pertaining to your IRS request" 
+                },
+                {
+                    "type": "TextBlock",
+                    "wrap": true,
+                    "style": "default",
+                    "horizontalAlignment": "Left",
+                    "text": "*  Analyze and demand at MTN"
+                }
+            ]
+        }
+    ],
+    "actions": [ 
+        {
+            "type": "Action.Submit",
+            "title": "Log In",
+            "data":{
+                "text":"login",
+                "msteams":{
+                    "type":"submit",
+                    "text":"login"
+                }
+            }  
+        }
+    ]
+}

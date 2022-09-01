@@ -1,0 +1,36 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Hello I'm Bot on Teams",
+            "wrap": true,
+            "weight": "Bolder",
+            "size": "Large"
+        },
+        {
+            "type": "TextBlock",
+            "text": "I can help you manage your Azure Permissions.",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Sign In",
+                    "data": {
+                        "msteams": {
+                            "type": "signin",
+                            "value": "1234567890" 
+                        }
+                    }
+                }
+            ],
+            "separator": true,
+            "horizontalAlignment": "Right"
+        }
+    ]
+}
